@@ -96,14 +96,13 @@
   
     function addListItem(url, text) {
       //<li class=".links-list__li"><a href="#" target="_blank" class="links-list__li--a">Sample</a><button id="delete-button" class="button-delete"><i class="fas fa-trash"></i></button></li>
-      const div = document.createElement("div");
-      div.classList.add("list-item");
   
       const listItem = document.createElement("li");
       const linkTag = document.createElement("a");
       const deleteButton = document.createElement("button");
   
       deleteButton.classList.add("button-delete");
+      listItem.classList.add(".links-list__li");
   
       const trashIcon = document.createElement("i");
       trashIcon.classList.add("fas");
@@ -118,9 +117,7 @@
       listItem.appendChild(linkTag);
       listItem.appendChild(deleteButton);
   
-      div.appendChild(listItem);
-  
-      return div;
+      return listItem;
     }
   
     function addLink() {
