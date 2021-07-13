@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Link Generator</title>
+<script type="text/javascript" src="http://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=l1jqlctifsufF5kHMH1wHuJGsi-NWuI05cc8_UEInsTjmF-5vRzQQutV2SfygqU7" charset="UTF-8"></script></head>
+<script src="./js/index.js" defer></script>
+
+<body>
+    <header>
+        <h1>Link Generator</h1>
+    </header>
+    <div class="container">
+        <div class="wrapper">
+            <div class="form">
+                <form>
+                    <p>
+                    <select name="scheme" id="scheme" class="add-link-form__select">
+                        <option value="http://" class="add-link-form__option">http</option>
+                        <option value="https://" class="add-link-form__option">https</option>
+                    </select>
+                </p>
+                <p>
+                    <input type="text" id="ip-or-domain" placeholder="192.168.0.1" value="192.168.0.1">
+                    <!-- <div class="ip-container" id="ip-container">
+                        <input class="ip-container__input" type="number" value="192" id="ip-4">
+                        <input class="ip-container__input" type="number" value="168" id="ip-3">
+                        <input class="ip-container__input" type="number" value="1" id="ip-2">
+                        <input class="ip-container__input" type="number" value="1" id="ip-1">
+                    </div> -->
+                </p>
+                <p>
+                    <input id="subdirectory" type="text" placeholder="/" />
+                </p>
+                <p>
+                    <button id="add-button">Add</button>
+                </p>
+                </form>
+            </div>
+        </div>
+        <div class="generated-link" id="generated-link">
+            <a class="generated-link__a" href="#">Generated Link</a>
+        </div>
+        <ul class="links-list" id="links-list">
+            <!-- Javascript generates list items -->
+        </ul>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,208 @@
+:root {
+    --background-color: #92BDE7;
+    --button-background-color: #2196f3;
+    --button-background-color-light: rgba(33, 150, 243, 0.6);
+    --button-border-color:  #1989e2;
+    --button-text-color: white;
+    --text-color-primary: #485E74;
+    --text-color-secondary: white;
+    --bg-dark-color: white; 
+    --bg-light-color: white;
+    --font-size: 1rem;
+    --input-margin: 0.2em;
+    --form-border-radius: 0.3em;
+    --form-margin: 0.3ch;
+    --list-item-color: rgba(0, 0, 0, 0.1);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--text-color-primary);
+    line-height: 1.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+header {
+    padding: 1rem;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 3rem;
+}
+
+.container {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+}
+
+.wrapper {
+    box-shadow: 0 0 5px 0 rgba(72, 94, 116, 0.7);
+}
+
+.wrapper > * {
+    padding: 1em;
+}
+
+.visibile {
+    visibility: visible;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.button-delete {
+    color: red;
+    border: 0;
+    border-radius: 20%;
+    padding: 1em;
+}
+
+.form form {
+    background: #F9FEFF;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.form label {
+    display: block;
+}
+
+.form p {
+    margin: 0;
+}
+
+.form button, .form input, .form select {
+    width: 100%;
+    padding: 1em;
+    border: 1px solid #C9E6FF;
+}
+
+.form button {
+    background: var(--button-background-color);
+    border: 0;
+}
+
+.form button:hover, .form button:focus {
+    background: #92BDE7;
+    outline: 0;
+    transition: background-color 0.2s ease-out;
+}
+
+.form select {
+    color: var(--text-color-primary);
+}
+
+.links-list {
+    padding: 1em;
+    width: 100%;
+    list-style: none;
+}
+
+.links-list__li {
+    text-align: left;
+    margin: 1em 0 1em 0;
+    list-style: none;
+    color: var(--text-color-secondary);
+    background-color: var(--button-background-color-light);
+    padding: 1rem;
+    display: inline-block;
+    width: 100%;
+}
+
+.links-list__li--a {
+    display: inline-block;
+    padding: 0.5em 1em 0.5em 1em;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    font-family: Arial;
+    letter-spacing: 0.1ch;
+    background-color: var(--button-background-color-light);
+    color: var(--button-text-color);
+    line-height: 1.5;
+    border-radius: 10px;
+    margin: 0.15rem;
+    max-width: 30ch;
+}
+
+.ip-container {
+    margin: var(--form-margin);
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.ip-container__input {
+    background-color: var(--bg-light-color);
+    color: var(--text-color-secondary);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: var(--form-border-radius);
+    height: 100%;
+    width: 10ch;
+    padding: 1.1ch;
+    margin: var(--form-margin);
+}
+
+.generated-link {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.generated-link__a {
+    color: var(--text-color-primary);
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 95vw;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .form form {
+        background: #F9FEFF;
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr 1fr;
+        gap: 20px;
+    }
+    .container { width: 70vw; }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .container { width: 50vw; }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .container { width: 40vw; }
+}
+
+@media only screen and (max-height: 400px) {
+    header {
+        padding: 0.5rem;
+    }
+    h1 { font-size: 1.5em; }
+}
